@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "tag": "INTRO",
+    "title": "천안 청년, 내일을 디자인하다!",
+    "subtitle": "2026 천안시 청년정책 안내",
+    "details": "청년의 도전과 성장을 응원하는 정책 이야기",
+    "image": "assets/slides/slide-01.webp",
+    "thumb": "assets/thumbs/slide-01.webp"
+  },
+  {
+    "id": 2,
+    "tag": "WHY POLICY",
+    "title": "청년정책이 필요한 이유",
+    "subtitle": "청년의 고민은 각기 다르지만, 해결을 향한 출발점은 연결되어 있습니다.",
+    "details": "일자리·진로 | 주거·자립 | 역량·성장 | 관계·마음",
+    "image": "assets/slides/slide-02.webp",
+    "thumb": "assets/thumbs/slide-02.webp"
+  },
+  {
+    "id": 3,
+    "tag": "POLICY MAP",
+    "title": "천안시 청년정책 한눈에 보기",
+    "subtitle": "청년의 일상과 성장 과정에 맞춘 7개 정책 분야",
+    "details": "취업·일자리 | 창업 | 주거 | 교육 | 복지 | 문화·여가 | 참여",
+    "image": "assets/slides/slide-03.webp",
+    "thumb": "assets/thumbs/slide-03.webp"
+  },
+  {
+    "id": 4,
+    "tag": "CAREER",
+    "title": "일자리 및 취업 지원",
+    "subtitle": "취업 준비에서 기업과의 만남까지",
+    "details": "취업역량 강화: 자기소개서·면접·직무 역량 교육 | 지역 기업과 연결: 기업 설명회와 채용연계 프로그램 | 2026년 사업 사례: 천안형 채용연계프로그램",
+    "image": "assets/slides/slide-04.webp",
+    "thumb": "assets/thumbs/slide-04.webp"
+  },
+  {
+    "id": 5,
+    "tag": "STARTUP",
+    "title": "창업 지원",
+    "subtitle": "작은 아이디어가 새로운 기회가 되도록",
+    "details": "창업 준비: 사업 아이디어 구체화와 사업계획 수립 | 성장 지원: 멘토링·창업 네트워크·활동 공간 정보 탐색 | 참고 사항: 세부 지원과 모집 여부는 해당 사업공고 확인",
+    "image": "assets/slides/slide-05.webp",
+    "thumb": "assets/thumbs/slide-05.webp"
+  },
+  {
+    "id": 6,
+    "tag": "HOUSING",
+    "title": "주거 및 생활안정 지원",
+    "subtitle": "마음 놓고 미래를 준비할 수 있는 생활 기반",
+    "details": "주거 정보: 주거 지원사업과 자격 요건 찾아보기 | 생활안정: 금융·생활 관련 상담 및 정보 연계 | 신청 전 확인: 소득·연령·거주 요건과 증빙서류 확인",
+    "image": "assets/slides/slide-06.webp",
+    "thumb": "assets/thumbs/slide-06.webp"
+  },
+  {
+    "id": 7,
+    "tag": "LEARNING",
+    "title": "교육 및 역량 강화",
+    "subtitle": "새로운 기술을 익히고 내 가능성을 확장하다",
+    "details": "직무 역량: 실무 중심 교육과 진로 설계 | 디지털 역량: AI·코딩·데이터 등 미래기술 학습 기회 탐색 | 자기계발: 관심 분야에 대한 학습과 성장 프로그램",
+    "image": "assets/slides/slide-07.webp",
+    "thumb": "assets/thumbs/slide-07.webp"
+  },
+  {
+    "id": 8,
+    "tag": "WELLBEING",
+    "title": "복지 및 마음건강",
+    "subtitle": "회복과 연결도 청년의 중요한 성장입니다.",
+    "details": "마음 돌봄: 심리·정서 상담과 회복 지원 정보 | 생활의 안정: 금융·주거·노무 등 생활 고민 상담 | 2026년 관련 사례: 천안청년센터의 상담·청년 지원 프로그램 안내",
+    "image": "assets/slides/slide-08.webp",
+    "thumb": "assets/thumbs/slide-08.webp"
+  },
+  {
+    "id": 9,
+    "tag": "CULTURE",
+    "title": "문화·여가 및 청년 참여",
+    "subtitle": "청년이 즐기고, 모이고, 직접 바꾸는 도시",
+    "details": "문화·예술: 문화 경험과 청년의 활동 기회 | 청년 커뮤니티: 모임과 관계 형성을 위한 네트워크 | 정책 참여: 청년의 정책 제안과 지역사회 활동",
+    "image": "assets/slides/slide-09.webp",
+    "thumb": "assets/thumbs/slide-09.webp"
+  },
+  {
+    "id": 10,
+    "tag": "HOW TO",
+    "title": "청년정책 이용 방법",
+    "subtitle": "내게 맞는 정책을 찾아, 조건을 확인하고, 신청하세요.",
+    "details": "01 정책 찾기: 천안시·청년포털에서 검색 | 02 자격 확인: 연령·거주·소득·모집기간 점검 | 03 접수하기: 안내된 홈페이지·방문 접수 | 04 결과 확인: 선정 안내 및 참여 절차 확인",
+    "image": "assets/slides/slide-10.webp",
+    "thumb": "assets/thumbs/slide-10.webp"
+  },
+  {
+    "id": 11,
+    "tag": "TOMORROW",
+    "title": "천안 청년의 미래",
+    "subtitle": "도전의 기회가 지역의 성장으로 이어집니다.",
+    "details": "더 많은 도전: 진로와 창업의 기회 | 안정적인 정착: 생활 기반과 연결 | 함께 성장하는 지역: 청년 참여와 교류",
+    "image": "assets/slides/slide-11.webp",
+    "thumb": "assets/thumbs/slide-11.webp"
+  },
+  {
+    "id": 12,
+    "tag": "CLOSING",
+    "title": "청년의 오늘을 응원하고, 내일을 함께 만듭니다.",
+    "subtitle": "정책정보 확인",
+    "details": "천안시 공식 홈페이지 cheonan.go.kr | 충남청년포털 youth.chungnam.go.kr | 사업별 지원대상·신청기간은 최신 공고 확인",
+    "image": "assets/slides/slide-12.webp",
+    "thumb": "assets/thumbs/slide-12.webp"
+  }
+]
