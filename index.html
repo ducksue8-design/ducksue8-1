@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#101223" />
+  <meta name="description" content="교육과 기술의 접점을 고민하는 업무 포트폴리오" />
+  <title>PORTFOLIO | 개인 포트폴리오</title>
+  <style>
+    :root {
+      --bg:#0a0c19; --surface:#141729; --surface2:#1b1e34; --text:#f6f7ff; --muted:#a6abc4;
+      --border:rgba(255,255,255,.11); --rainbow:linear-gradient(105deg,#ff647d 0%,#ffb45c 19%,#ffe56d 37%,#62e3aa 56%,#64b5ff 76%,#b998ff 100%);
+      --shadow:0 18px 55px rgba(0,0,0,.20);
+    }
+    *,*::before,*::after{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Pretendard,"Noto Sans KR",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.65;overflow-x:hidden}
+    body::before{content:"";position:fixed;z-index:-1;pointer-events:none;inset:-25%;background:radial-gradient(ellipse at 19% 18%,rgba(123,100,246,.16),transparent 36%),radial-gradient(ellipse at 80% 28%,rgba(61,175,204,.10),transparent 30%)}
+    a{color:inherit;text-decoration:none}button{font:inherit} .wrap{width:min(1100px,calc(100% - 44px));margin:0 auto}
+    .rainbow-line{height:5px;background:var(--rainbow)}
+    header{position:sticky;top:0;z-index:20;background:rgba(10,12,25,.84);border-bottom:1px solid var(--border);backdrop-filter:blur(16px)}
+    .nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:11px;font-size:14px;font-weight:850;letter-spacing:.13em}
+    .brand-mark{width:30px;height:30px;border-radius:10px;background:var(--rainbow);box-shadow:0 0 20px #ab8aff44}
+    .links{display:flex;gap:27px;align-items:center}.links a{font-size:13px;color:var(--muted);transition:color .2s}.links a:hover,.links a:focus-visible{color:white}
+    .nav-cta{padding:9px 15px;border:1px solid var(--border);border-radius:50px!important;color:white!important}
+    .hero{padding:100px 0 83px;display:grid;grid-template-columns:1.35fr .65fr;gap:40px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--border);border-radius:40px;padding:6px 13px;background:rgba(255,255,255,.035);font-size:12px;font-weight:700;color:#c9cbe0;letter-spacing:.07em}
+    .dot{width:7px;height:7px;border-radius:50%;background:#61e5b6;box-shadow:0 0 14px #61e5b6}
+    h1{font-size:clamp(38px,5.5vw,72px);letter-spacing:-.067em;line-height:1.17;margin:25px 0 24px;font-weight:850;word-break:keep-all}
+    .gradient-text{background:var(--rainbow);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .intro{max-width:610px;font-size:16px;color:var(--muted);word-break:keep-all;margin:0}
+    .buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+    .button{display:inline-flex;justify-content:center;align-items:center;gap:10px;border-radius:13px;padding:12px 21px;font-size:13px;font-weight:800;transition:transform .18s,box-shadow .18s,border-color .18s;cursor:pointer}
+    .button:hover{transform:translateY(-3px)}.button:active{transform:scale(.97)}.button:focus-visible,a:focus-visible{outline:2px solid #ffe46a;outline-offset:4px}
+    .button-primary{background:var(--rainbow);color:#131325;box-shadow:0 12px 30px #7365ca35}
+    .button-outline{border:1px solid var(--border);background:rgba(255,255,255,.04)}
+    .visual{position:relative;aspect-ratio:1;max-width:370px;width:100%;margin:auto;display:grid;place-items:center}
+    .visual::before{content:"";position:absolute;inset:8%;background:conic-gradient(from 120deg,#ff6d89,#ffce64,#62e8ba,#68b6ff,#ac85ff,#ff6d89);border-radius:50%;filter:blur(34px);opacity:.37;animation:glow 11s linear infinite}
+    .orb{position:relative;display:grid;place-items:center;width:79%;aspect-ratio:1;border-radius:35%;border:1px solid rgba(255,255,255,.25);background:linear-gradient(145deg,rgba(39,42,73,.96),rgba(17,20,39,.96));box-shadow:var(--shadow);transform:rotate(-8deg)}
+    .orb::before{content:"";position:absolute;inset:13px;border-radius:30%;border:1px solid rgba(255,255,255,.08)}
+    .orb-text{font-size:clamp(70px,11vw,132px);font-weight:900;letter-spacing:-.12em;line-height:1;background:var(--rainbow);background-clip:text;-webkit-background-clip:text;color:transparent;transform:rotate(8deg);padding-right:.12em}
+    .visual-chip{position:absolute;right:-3%;bottom:12%;padding:10px 17px;border:1px solid var(--border);border-radius:100px;background:#23263d;box-shadow:var(--shadow);font-size:12px;font-weight:800;color:#e9eafd}
+    section{scroll-margin-top:95px;padding:34px 0 45px}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:15px;margin:0 0 25px}.kicker{font-size:11px;color:#bfa8ff;letter-spacing:.18em;font-weight:800}.section-heading h2{margin:6px 0 0;font-size:clamp(25px,3vw,34px);letter-spacing:-.045em}.section-sub{font-size:12px;color:var(--muted)}
+    .about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}.panel{background:linear-gradient(145deg,rgba(29,32,55,.9),rgba(18,21,39,.97));border:1px solid var(--border);border-radius:22px;padding:30px;box-shadow:var(--shadow)}
+    .panel p{color:var(--muted);font-size:14px;margin:0;word-break:keep-all}.panel h3{font-size:19px;margin:0 0 16px;letter-spacing:-.025em}.bio-highlight{font-size:20px!important;line-height:1.7;font-weight:680;color:white!important;margin-bottom:16px!important}
+    .detail{display:grid;grid-template-columns:85px 1fr;gap:10px;padding:13px 0;border-bottom:1px solid var(--border);font-size:13px}.detail:last-child{border-bottom:none}.detail span:first-child{color:#8991b1}.detail span:last-child{color:#edf0ff;font-weight:650}
+    .card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.work-card{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:27px;transition:transform .2s,border-color .2s,background .2s}.work-card:hover{transform:translateY(-5px);border-color:rgba(173,151,255,.45);background:#1a1d35}.work-icon{height:45px;width:45px;border-radius:14px;display:grid;place-items:center;font-size:21px;margin-bottom:24px}.work-card:nth-child(1) .work-icon{background:#f587aa22}.work-card:nth-child(2) .work-icon{background:#77daca22}.work-card:nth-child(3) .work-icon{background:#8ca7ff22}.work-card h3{font-size:17px;margin:0 0 9px}.work-card p{font-size:13px;color:var(--muted);margin:0;word-break:keep-all}
+    .timeline{border-left:1px solid #7b80aa66;margin-left:10px;padding-left:26px}.timeline-item{position:relative;margin-bottom:28px}.timeline-item:last-child{margin-bottom:0}.timeline-item::before{content:"";position:absolute;left:-33px;top:8px;width:12px;height:12px;border:3px solid #a58eff;border-radius:50%;background:var(--bg)}.timeline-meta{font-size:11px;color:#b6a3ff;font-weight:800;letter-spacing:.09em}.timeline-item h3{margin:3px 0 5px;font-size:17px}.timeline-item p{margin:0;font-size:13px;color:var(--muted)}
+    .projects{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.project{position:relative;min-height:195px;padding:24px;background:#181b30;border:1px solid var(--border);border-radius:20px;display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;overflow:hidden;transition:transform .2s,border-color .2s}.project::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--rainbow);opacity:.95}.project:hover{transform:translateY(-5px);border-color:#a28ffb}.project:active{transform:scale(.98)}.project-number{font-size:42px;line-height:1;font-weight:850;letter-spacing:-.08em;color:#fff}.project-bottom{width:100%;display:flex;align-items:end;justify-content:space-between;gap:10px}.project h3{margin:0;font-size:15px}.project p{font-size:12px;color:var(--muted);margin:3px 0 0}.arrow{font-size:24px;color:#bdaeff}
+    .notice{font-size:12px;color:#8f95af;margin:17px 0 0}.contact{margin:40px 0 65px;padding:30px;border:1px solid var(--border);border-radius:22px;display:flex;align-items:center;justify-content:space-between;gap:20px;background:linear-gradient(100deg,rgba(92,97,160,.15),rgba(30,33,56,.75))}.contact h2{font-size:23px;letter-spacing:-.04em;margin:0 0 4px}.contact p{color:var(--muted);font-size:13px;margin:0}
+    footer{border-top:1px solid var(--border);padding:24px 0 35px;color:#858ba7;font-size:12px}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    @keyframes glow{to{transform:rotate(360deg)}}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;padding:65px 0 40px}.visual{max-width:260px;grid-row:1}.about-grid{grid-template-columns:1fr}.card-grid,.projects{grid-template-columns:1fr}.links{gap:13px}.nav-cta{display:none}.contact{align-items:flex-start;flex-direction:column}section{padding:32px 0}.visual-chip{right:0}.work-card{padding:24px}.work-icon{margin-bottom:12px}.project{min-height:155px}}
+    @media(max-width:480px){.wrap{width:min(100% - 32px,1100px)}.nav{min-height:65px}.links{gap:11px}.links a{font-size:11px}.brand{font-size:12px}.brand-mark{width:24px;height:24px;border-radius:8px}.hero{gap:19px}.visual{max-width:210px}h1{font-size:41px}.intro{font-size:14px}.panel{padding:23px}.section-sub{display:none}.buttons{gap:9px}.button{padding:11px 16px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+  </style>
+</head>
+<body>
+  <div class="rainbow-line"></div>
+  <header>
+    <nav class="wrap nav" aria-label="주요 메뉴">
+      <a href="#top" class="brand" aria-label="포트폴리오 처음으로"><span class="brand-mark" aria-hidden="true"></span>MY PORTFOLIO</a>
+      <div class="links"><a href="#about">소개</a><a href="#work">담당 업무</a><a href="#career">경력</a><a href="#projects" class="nav-cta">프로젝트 보기 ↗</a></div>
+    </nav>
+  </header>
+  <main id="top" class="wrap">
+    <div class="hero">
+      <div>
+        <span class="eyebrow"><span class="dot" aria-hidden="true"></span> OPEN TO NEW IDEAS</span>
+        <h1>교육의 내일을<br/><span class="gradient-text">더 다채롭게.</span></h1>
+        <p class="intro">안녕하세요. <strong style="color:#fff">첨단교육팀</strong>에서 일하고 있습니다. 교육과 기술을 연결하고, 더 나은 배움의 경험을 만들어가는 과정에 관심이 있습니다. 이곳에 저의 업무와 경험, 프로젝트를 기록합니다.</p>
+        <div class="buttons"><a class="button button-primary" href="#projects">프로젝트 살펴보기 <span aria-hidden="true">↗</span></a><a class="button button-outline" href="#about">저에 대해 알아보기 ↓</a></div>
+      </div>
+      <div class="visual" aria-hidden="true"><div class="orb"><span class="orb-text">ME.</span></div><span class="visual-chip">✦ CREATE · CONNECT · GROW</span></div>
+    </div>
+    <section id="about" aria-labelledby="about-title">
+      <div class="section-heading"><div><span class="kicker">01 / ABOUT ME</span><h2 id="about-title">나를 소개합니다</h2></div><span class="section-sub">ABOUT · IDENTITY</span></div>
+      <div class="about-grid">
+        <div class="panel"><h3>안녕하세요! 👋</h3><p class="bio-highlight">새로운 가능성을 탐색하고,<br/>아이디어를 현실의 경험으로 연결합니다.</p><p>변화하는 교육 환경 속에서 실용적인 해결책을 고민합니다. 협업과 실행을 바탕으로 의미 있는 변화를 만들어가는 것을 중요하게 생각합니다.<br/><br/>※ 이 문장은 예시 자기소개입니다. 본인의 실제 소개로 자유롭게 바꿔주세요.</p></div>
+        <div class="panel"><h3>PROFILE</h3><div class="detail"><span>이름</span><span>이름을 입력해주세요</span></div><div class="detail"><span>소속</span><span>첨단교육팀</span></div><div class="detail"><span>직무</span><span>담당 직무를 입력해주세요</span></div><div class="detail"><span>관심 분야</span><span>교육 혁신 · 디지털 기술 · 협업</span></div><div class="detail"><span>이메일</span><span>이메일 주소를 입력해주세요</span></div></div>
+      </div>
+    </section>
+    <section id="work" aria-labelledby="work-title">
+      <div class="section-heading"><div><span class="kicker">02 / WHAT I DO</span><h2 id="work-title">담당 업무</h2></div><span class="section-sub">AREAS OF WORK</span></div>
+      <div class="card-grid">
+        <article class="work-card"><div class="work-icon" aria-hidden="true">💡</div><h3>교육 기획</h3><p>교육 목표와 요구를 분석하고, 목적에 맞는 프로그램과 운영 방식을 설계합니다.</p></article>
+        <article class="work-card"><div class="work-icon" aria-hidden="true">🧩</div><h3>프로젝트 운영</h3><p>다양한 관계자와 협력하며 계획을 구체적인 실행과 결과로 연결합니다.</p></article>
+        <article class="work-card"><div class="work-icon" aria-hidden="true">🚀</div><h3>디지털 교육 혁신</h3><p>새로운 기술과 도구를 탐색하고 실제 교육 현장의 활용 가능성을 고민합니다.</p></article>
+      </div><p class="notice">* 위 업무 설명은 편집 가능한 예시로, 실제 담당 업무에 맞게 수정해주세요.</p>
+    </section>
+    <section id="career" aria-labelledby="career-title">
+      <div class="section-heading"><div><span class="kicker">03 / EXPERIENCE</span><h2 id="career-title">주요 경력 및 경험</h2></div><span class="section-sub">MY JOURNEY</span></div>
+      <div class="panel"><div class="timeline">
+        <div class="timeline-item"><span class="timeline-meta">CURRENT</span><h3>첨단교육팀</h3><p>현재 소속 · 실제 담당 역할과 주요 성과를 작성해주세요.</p></div>
+        <div class="timeline-item"><span class="timeline-meta">PREVIOUS EXPERIENCE</span><h3>이전 경력 또는 주요 프로젝트</h3><p>기관명 / 기간 / 맡은 역할 / 성과를 입력해주세요.</p></div>
+        <div class="timeline-item"><span class="timeline-meta">EDUCATION & SKILLS</span><h3>교육 이력 및 전문 역량</h3><p>관련 학습 경험, 자격, 활용 도구 등을 작성해주세요.</p></div>
+      </div></div>
+    </section>
+    <section id="projects" aria-labelledby="projects-title">
+      <div class="section-heading"><div><span class="kicker">04 / EXPLORE MORE</span><h2 id="projects-title">더 알아보기</h2></div><span class="section-sub">LINKED PAGES</span></div>
+      <div class="projects">
+        <a class="project" href="1.html" aria-label="페이지 1로 이동"><span class="project-number">01</span><div class="project-bottom"><div><h3>프로젝트 1</h3><p>1.html로 이동</p></div><span class="arrow" aria-hidden="true">↗</span></div></a>
+        <a class="project" href="2.html" aria-label="페이지 2로 이동"><span class="project-number">02</span><div class="project-bottom"><div><h3>프로젝트 2</h3><p>2.html로 이동</p></div><span class="arrow" aria-hidden="true">↗</span></div></a>
+        <a class="project" href="3.html" aria-label="페이지 3로 이동"><span class="project-number">03</span><div class="project-bottom"><div><h3>프로젝트 3</h3><p>3.html로 이동</p></div><span class="arrow" aria-hidden="true">↗</span></div></a>
+      </div><p class="notice">* 1.html, 2.html, 3.html 파일은 아직 생성되지 않았습니다. 추후 index.html과 같은 폴더에 넣으면 각 버튼이 연결됩니다.</p>
+    </section>
+    <div class="contact"><div><h2>함께 더 좋은 내일을 만듭니다.</h2><p>배움과 성장, 그리고 새로운 연결을 위한 기록.</p></div><a class="button button-primary" href="#top">맨 위로 ↑</a></div>
+  </main>
+  <footer><div class="wrap footer-inner"><span>© <span id="year">2026</span> MY PORTFOLIO</span><span>Made with curiosity & color ✦</span></div></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
